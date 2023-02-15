@@ -1,0 +1,23 @@
+
+/* ---------- Configuration Code ---------- */
+
+configuration {
+
+/* Drun Appearance */
+
+display-drun: "Apps";
+drun-display-format: "{name}";
+
+/* Font */
+font: "Caskaydia Cove Nerd Font Mono Regular 12";
+
+/* Modes */
+modi: "drun,window";
+
+/* Icons */
+show-icons: true;
+icon-theme: "Papirus-Dark";
+
+}
+
+@theme "mytheme.rasi"

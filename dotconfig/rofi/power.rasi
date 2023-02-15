@@ -1,0 +1,22 @@
+
+window {
+    width: 20%;
+    height: 16%;
+
+}
+
+
+inputbar {
+  children: [];
+  border: 0px;
+}
+
+listview {
+	lines: 2;
+}
+
+listview {
+	border: 0px;
+
+
+}

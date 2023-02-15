@@ -1,0 +1,135 @@
+
+
+// Rofi Theme, by: Logwheel
+
+
+
+// ------ Colors ------
+
+
+* {
+bg: #11111b;
+fg: #cdd6f4;
+bgalt: #181825;
+aqua-r: #a6e3a1;
+aqua: #cdd6f4;
+black: #ffffff;
+red: #fb4934;
+blue: #83a598;
+purple: #d3869b;
+
+}
+
+// ------ Window ------
+
+window {
+    padding:          5;
+    background-color: @bg;
+    border:           3px;
+    border-color:     @aqua;
+    border-radius:    6px;
+    width:	      30%;
+    height:           35%;
+}
+
+// ------ Mainbox & Textbox ------
+
+mainbox {
+    padding: 25px;
+    border:  0px;
+    border-radius: 6px;
+    border-color: @bg;
+    background-color: @bg;
+}
+
+textbox {
+    text-color: @fg;
+}
+
+// ------ ListView ------
+
+listview {
+    padding:      15px;
+    border-radius: 0px;
+    border-color: @aqua;
+    border: 0px;
+    scrollbar:    false;
+    spacing:      5px ;
+    lines: 10;
+    columns: 1;
+    background-color: @bg;
+}
+
+// ------ Elements ------
+
+element {
+//    enabled: true;
+    padding: 5px ;
+    border:  2px;
+    border-color: @bg;
+    border-radius: 6px;
+    background-color: @bg;
+//    text-color: @fg;
+}
+
+
+element.selected {
+    background-color: @bgalt;
+//    text-color: @fg;   
+}
+
+element-icon {
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element-text selected {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+
+// ------ Mode Switcher ------
+
+mode-switcher {
+    border-color: @black;
+    border:       0px dash 0px 0px ;
+}
+
+// ------ Buttons ------
+
+button {
+    spacing:    0;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+button selected {
+    background-color: @bg;
+    text-color:       @fg;
+}
+
+// ------ InputBar ------
+
+inputbar {
+    padding:    0px ;
+    spacing:    0px ;
+    text-color: @fg;
+    border:     2px;
+    border-color: @aqua;
+    border-radius: 6px;
+    children:   [entry];
+}
+
+entry {
+    padding:    10px;
+    spacing:    0px;
+    text-color: @fg;
+    background-color: @bg;
+}
+
+
