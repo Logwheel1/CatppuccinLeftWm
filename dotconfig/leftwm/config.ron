@@ -1,5 +1,5 @@
 #![enable(implicit_some)]
-
+(
 
 
 
@@ -106,3 +106,5 @@ keybind: [
 	(command: SetLayout, value: "MainAndVertStack", modifier: ["modkey"], key: "v"),
 	
 ]
+
+)
