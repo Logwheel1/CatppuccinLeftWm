@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Symlinks
-ln -s ~/.config/leftwm/Catppuccin/* ~/.config/leftwm/themes/current
+#ln -s ~/.config/leftwm/Catppuccin/* ~/.config/leftwm/themes/current
 
 
 # Scriptpath
