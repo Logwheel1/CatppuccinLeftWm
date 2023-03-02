@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Symlinks
+ln -s ~/.config/leftwm/Catppuccin/* ~/.config/leftwm/themes/current
+
+
+# Scriptpath
 export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 # Down the last running theme
