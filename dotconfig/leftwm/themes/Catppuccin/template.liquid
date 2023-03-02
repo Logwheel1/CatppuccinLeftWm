@@ -1,0 +1,12 @@
+{% for tag in workspace.tags %}
+{% if tag.mine %}
+%{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
+%{F#a6e3a1}%{B#181825}%{o#11111b}%{u#11111b}%{+o}%{+u}    
+%{A}
+
+{% else %}
+%{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
+%{F#a6e3a1}%{B#181825}%{o#11111b}%{u#11111b}%{+o}%{+u}    
+%{A}
+{% endif %}
+{% endfor %}
