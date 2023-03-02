@@ -2,15 +2,8 @@
 (
 
 
-
 // ---------- Tags ---------- ##tags
-tags: ["1", "2", "3", "4", "5"]
-
-
-
-
-// ---------- Workspace ---------- ##workspaces
-workspaces: [( output: "HDMI-0", y: 0, x: 0, height: 1920, width: 1080 ),]
+tags: ["1", "2", "3", "4", "5",],
 
 
 
@@ -19,26 +12,25 @@ workspaces: [( output: "HDMI-0", y: 0, x: 0, height: 1920, width: 1080 ),]
 
 layouts: [
 	MainAndVertStack,
-	Monocle,
-]
+],
 
-layout_mode: Tag
+layout_mode: Tag,
 
 
 
 
 // ---------- Modifier ---------- ##mod
 
-modkey: "Mod4"
-mousekey: "Mod4"
+modkey: "Mod4",
+mousekey: "Mod4",
 
 
 
 
 // ---------- Focus Behaviour ---------- ##focus
 
-focus_behaviour: ClickTo
-focus_new_windows: true
+focus_behaviour: ClickTo,
+focus_new_windows: true,
 
 
 
@@ -67,8 +59,8 @@ keybind: [
 
 // ------ Apps ------
 
-	(command: Execute, value: "kitty", modifier: ["modkey"], key: "t"),
-	(command: Execute, value: "librewolf", modifier: ["modkey"], key: "b"),
+	(command: Execute, value: "gnome-terminal", modifier: ["modkey"], key: "t"),
+	(command: Execute, value: "brave-browser", modifier: ["modkey"], key: "b"),
 	(command: Execute, value: "nemo", modifier: ["modkey"], key: "e"),
 	(command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "p"),
 
@@ -82,29 +74,34 @@ keybind: [
 	(command: ToggleFullScreen, modifier: ["modkey"], key: "f"),
 
 	// MoveToTag
-	(command: MoveToTag, value: "1", modifier: ["modkey", "Shift"], key "1"),
-	(command: MoveToTag, value: "2", modifier: ["modkey", "Shift"], key "2"),
-	(command: MoveToTag, value: "3", modifier: ["modkey", "Shift"], key "3"),
-	(command: MoveToTag, value: "4", modifier: ["modkey", "Shift"], key "4"),
-	(command: MoveToTag, value: "5", modifier: ["modkey", "Shift"], key "5"),
+	(command: MoveToTag, value: "1", modifier: ["modkey", "Shift"], key: "1"),
+	(command: MoveToTag, value: "2", modifier: ["modkey", "Shift"], key: "2"),
+	(command: MoveToTag, value: "3", modifier: ["modkey", "Shift"], key: "3"),
+	(command: MoveToTag, value: "4", modifier: ["modkey", "Shift"], key: "4"),
+	(command: MoveToTag, value: "5", modifier: ["modkey", "Shift"], key: "5"),
 
 // ------ Tag Control ------
 	
 	// Move to Tag
-	(command: GotoTag, value: "1", modifier: ["modkey"], key "1"),
-	(command: GotoTag, value: "2", modifier: ["modkey"], key "2"),
-	(command: GotoTag, value: "3", modifier: ["modkey"], key "3"),
-	(command: GotoTag, value: "4", modifier: ["modkey"], key "4"),
-	(command: GotoTag, value: "5", modifier: ["modkey"], key "5"),
+	(command: GotoTag, value: "1", modifier: ["modkey"], key: "1"),
+	(command: GotoTag, value: "2", modifier: ["modkey"], key: "2"),
+	(command: GotoTag, value: "3", modifier: ["modkey"], key: "3"),
+	(command: GotoTag, value: "4", modifier: ["modkey"], key: "4"),
+	(command: GotoTag, value: "5", modifier: ["modkey"], key: "5"),
 
 	// Focus Next & Previous Tag
 	(command: FocusNextTag, modifier: ["modkey"], key: "Right"),
 	(command: FocusPreviousTag, modifier: ["modkey"], key: "Left"),
 
 // ------ Layout ------
+
 	(command: SetLayout, value: "Monocle", modifier: ["modkey"], key: "m"),
 	(command: SetLayout, value: "MainAndVertStack", modifier: ["modkey"], key: "v"),
+
+// ------ LeftWM Control ------
+	(command: HardReload, modifier: ["modkey", "Shift"], key: "r"),
 	
-]
+],
+
 
 )
