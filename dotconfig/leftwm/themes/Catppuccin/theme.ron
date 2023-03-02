@@ -1,0 +1,14 @@
+#![enable(implicit_some)]
+(
+
+// Borders
+border_width: 4,
+
+default_border_color: "#9399b2",
+floating_border_color: "#9399b2",
+focused_border_color: "#94e2d5"
+
+// Margin
+margin: 10,
+
+)
