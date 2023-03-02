@@ -9,10 +9,13 @@ if [ -f "/tmp/leftwm-theme-down" ]; then
 fi
 ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 
+# apply theme.ron
+leftwm-command "LoadTheme $HOME/.config/leftwm/themes/Catppuccin/theme.ron"
+
+
 # autostart
 $HOME/.config/polybar/launch.sh
-nitrogen --restore
-
+xwallpaper --center $HOME/Pictures/Wallpapers/Flatppuccin/flatppuccin.png
 
 
 
