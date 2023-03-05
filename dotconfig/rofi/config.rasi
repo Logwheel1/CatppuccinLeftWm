@@ -5,8 +5,8 @@ configuration {
 
 /* Drun Appearance */
 
-display-drun: "Apps";
-drun-display-format: "{name}";
+display-drun: "";
+drun-display-format: "  {name}";
 
 /* Font */
 font: "Caskaydia Cove Nerd Font Mono Regular 12";
