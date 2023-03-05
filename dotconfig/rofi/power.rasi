@@ -1,22 +1,26 @@
+// Window
 
 window {
-    width: 20%;
-    height: 16%;
 
+	width: 20%;
+	height: 150px;
 }
 
 
-inputbar {
-  children: [];
-  border: 0px;
-}
+// Listview
 
 listview {
+
 	lines: 2;
 }
 
-listview {
-	border: 0px;
+// Mainbox
+
+mainbox {
+
+children: [ "listview" ];
+
 
 
 }
+
