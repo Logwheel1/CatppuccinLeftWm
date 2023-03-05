@@ -59,10 +59,10 @@ keybind: [
 
 // ------ Apps ------
 
-	(command: Execute, value: "gnome-terminal", modifier: ["modkey"], key: "t"),
+	(command: Execute, value: "kitty", modifier: ["modkey"], key: "t"),
 	(command: Execute, value: "brave-browser", modifier: ["modkey"], key: "b"),
 	(command: Execute, value: "nemo", modifier: ["modkey"], key: "e"),
-	(command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "p"),
+	(command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "space"),
 
 // ------ WindowControl ------
 
@@ -99,7 +99,7 @@ keybind: [
 	(command: SetLayout, value: "MainAndVertStack", modifier: ["modkey"], key: "v"),
 
 // ------ LeftWM Control ------
-	(command: HardReload, modifier: ["modkey", "Shift"], key: "r"),
+	(command: HardReload, modifier: ["modkey"], key: "r"),
 	
 ],
 
