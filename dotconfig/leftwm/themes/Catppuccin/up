@@ -19,8 +19,12 @@ leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
 
 # autostart
-$HOME/.config/polybar/launch.sh
-xwallpaper --center $HOME/Pictures/Wallpapers/Flatppuccin/flatppuccin.png
+/usr/bin/nvidia-settings --load-config-only &
+$HOME/.config/polybar/launch.sh &
+xwallpaper --maximize $HOME/Pictures/Wallpapers/Catppuccin/silentsea.jpg &
+xinput --set-prop 'pointer:''Razer Orochi V2' 'libinput Accel Profile Enabled' 0, 1 &
+picom
+
 
 
 
