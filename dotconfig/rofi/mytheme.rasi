@@ -6,7 +6,6 @@
 
 // ------ Colors ------
 
-
 * {
       bg: #11111b;
       fg: #cdd6f4;
@@ -17,14 +16,11 @@
       red: #fb4934;
       blue: #83a598;
       purple: #d3869b;
-
 }
 
 // ------ Window ------
 
 window {
-
-      padding:          5;
       background-color: @bg;
       location:	        center;
       anchor:	        center;
@@ -32,14 +28,14 @@ window {
       border-color:     @aqua;
       border-radius:    25px;
       width:	        25%;
-      height:           25%;
-
+      height:           24%;
 }
 
 // ------ Mainbox & Textbox ------
 
 mainbox {
       padding:          25px;
+      margin:		0px;
       border:           0px;
       border-radius:    0px;
       border-color:     @bg;
@@ -54,7 +50,8 @@ textbox {
 // ------ ListView ------
 
 listview {
-      padding:          5px;
+      padding:          0;
+      margin:	        5px;
       border-radius:    0px;
       border:           0px;
       scrollbar:        false;
@@ -69,7 +66,8 @@ listview {
 // element
 
 element {
-      padding:          5px ;
+      padding:          5px;
+      margin:	        0px;
       border:           2px;
       border-color:     @bg;
       border-radius:    15px;
@@ -79,23 +77,18 @@ element {
 // element selected
 
 element.selected {
-
       background-color: @bgalt;
-
 }
 
 // element icon
 
 element-icon {
-
     background-color:   transparent;
-
 }
 
 // element text
 
 element-text {
-
     background-color:   transparent;
     text-color:         @fg;
     location:           center;   
@@ -148,4 +141,4 @@ entry {
 }
 
 
-
+// The End! :)
