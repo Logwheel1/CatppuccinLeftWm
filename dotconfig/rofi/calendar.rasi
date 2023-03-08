@@ -1,0 +1,146 @@
+
+
+// Rofi Theme, by: Logwheel
+
+
+
+// ------ Colors ------
+
+* {
+      bg: #11111b;
+      fg: #cdd6f4;
+      bgalt: #181825;
+      aqua-r: #a6e3a1;
+      aqua: #9399b2;
+      black: #ffffff;
+      red: #fb4934;
+      blue: #83a598;
+      purple: #d3869b;
+}
+
+// ------ Window ------
+
+window {
+      background-color: @bg;
+      location:	        north east;
+      anchor:	        north east;
+      y-offset: 40px;
+      x-offset: -5px;
+      border:           3px;
+      border-color:     @aqua;
+      border-radius:    25px;
+      width:	        15%;
+      height:           31%;
+}
+
+// ------ Mainbox & Textbox ------
+
+mainbox {
+      padding:          25px;
+      margin:		0px;
+      border:           0px;
+      border-radius:    0px;
+      border-color:     @bg;
+      background-color: @bg;
+      children:         [ "listview" ]; 
+}
+
+textbox {
+      text-color:       @fg;
+}
+
+// ------ ListView ------
+
+listview {
+      padding:          0;
+      margin:	        0px;
+      border-radius:    0px;
+      border:           0px;
+      scrollbar:        false;
+      spacing:          5px ;
+      lines:            7;
+      columns:          1;
+      background-color: @bg;
+}
+
+// ------ Elements ------
+
+// element
+
+element {
+      padding:          5px;
+      margin:	        0px;
+      border:           2px;
+      border-color:     @bg;
+      border-radius:    15px;
+      background-color: @bg;
+}
+
+// element selected
+
+element.selected {
+      background-color: @bg;
+}
+
+// element icon
+
+element-icon {
+    background-color:   transparent;
+}
+
+// element text
+
+element-text {
+    background-color:   transparent;
+    text-color:         @fg;
+    location:           center;   
+ 
+}
+
+// element text selected
+
+element-text selected {
+    background-color:   transparent;
+    text-color:         @fg;
+}
+
+
+// ------ Mode Switcher ------
+
+mode-switcher {
+    border-color: @black;
+    border:       0px dash 0px 0px ;
+}
+
+// ------ Buttons ------
+
+button {
+    spacing:    0;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+button selected {
+    background-color: @bg;
+    text-color:       @fg;
+}
+
+// ------ InputBar ------
+
+inputbar {
+    padding:    0px ;
+    text-color: @fg;
+    border:     2px;
+    border-color: @aqua;
+    border-radius: 10px;
+    children:   [ "entry" ];
+}
+
+entry {
+    padding:    7px;
+    text-color: @fg;
+    background-color: @bg;
+}
+
+
+// The End! :)
