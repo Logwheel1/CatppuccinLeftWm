@@ -12,6 +12,7 @@ tags: ["1", "2", "3", "4", "5",],
 
 layouts: [
 	MainAndVertStack,
+	Monocle,
 ],
 
 layout_mode: Tag,
@@ -27,6 +28,13 @@ mousekey: "Mod4",
 
 
 
+// ---------- SwapTags ---------- ## swap
+
+disable_current_tag_swap: true,
+
+
+
+
 // ---------- Focus Behaviour ---------- ##focus
 
 focus_behaviour: ClickTo,
@@ -38,16 +46,16 @@ focus_new_windows: true,
 
 // ---------- Scratchpads ---------- ##scratch
 
-//scratchpad: [
-//	( name: "Terminal",
-//	  value: "kitty",
-//	  x: 860,
-//	  y: 390,
-//	  height: 300,
-//	  width: 200 
-//	),
-//
-//]
+scratchpad: [	
+	( 
+	name: "goofy",
+	value: "kitty",
+	x: 860,
+	y: 390,
+	height: 300,
+	width: 200 
+	),
+],
 
 
 
@@ -63,6 +71,8 @@ keybind: [
 	(command: Execute, value: "brave-browser", modifier: ["modkey"], key: "b"),
 	(command: Execute, value: "nemo", modifier: ["modkey"], key: "e"),
 	(command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "space"),
+        (command: Execute, value: "$HOME/.config/rofi/scripts/calendar", modifier: ["modkey"], key: "c"),
+        (command: Execute, value: "$HOME/.config/rofi/scripts/powermenu", modifier: ["modkey", "Shift"], key: "p"),
 
 // ------ WindowControl ------
 
@@ -99,7 +109,7 @@ keybind: [
 	(command: SetLayout, value: "MainAndVertStack", modifier: ["modkey"], key: "v"),
 
 // ------ LeftWM Control ------
-	(command: HardReload, modifier: ["modkey"], key: "r"),
+	(command: SoftReload, modifier: ["modkey", "Shift"], key: "r"),
 	
 ],
 
