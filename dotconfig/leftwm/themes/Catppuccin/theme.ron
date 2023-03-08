@@ -4,9 +4,13 @@
 // Borders
 border_width: 2,
 
-default_border_color: "#9399b2",
-floating_border_color: "#9399b2",
-focused_border_color: "#94e2d5",
+//default_border_color: "#9399b2",
+//floating_border_color: "#9399b2",
+//focused_border_color: "#94e2d5",
+
+default_border_color: "#7f849c",
+focused_border_color: "#cba6f7",
+floating_border_color: "#cba6f7",
 
 // Margin
 margin: 10,
