@@ -1,26 +1,30 @@
-// Window
+// ------ Window -------
 
-window {
+window {       
+ 	margin:   0;
+	padding:  0;
+	width:    20%;
+	height:   130px;
+	//width:  22%;
+	//height: 92%;
+	location: north east;
+ 	anchor:   north east;
+ 	y-offset: 40px;
+	x-offset: -5px;
+       } 
 
-	width: 20%;
-	height: 150px;
-}
 
-
-// Listview
+// ------ Listview -------
 
 listview {
+	lines:   2;
+	margin:  0;
+	padding: 0;
+         }
 
-	lines: 2;
-}
-
-// Mainbox
+// ------- Mainbox -------
 
 mainbox {
-
 children: [ "listview" ];
-
-
-
-}
-
+margin:   0;
+        }
