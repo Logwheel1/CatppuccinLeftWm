@@ -13,6 +13,9 @@ tags: ["1", "2", "3", "4", "5",],
 layouts: [
 	MainAndVertStack,
 	Monocle,
+	EvenHorizontal,
+	EvenVertical,
+	Fibonacci,
 ],
 
 layout_mode: Tag,
@@ -72,7 +75,8 @@ keybind: [
 	(command: Execute, value: "nemo", modifier: ["modkey"], key: "e"),
 	(command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "space"),
         (command: Execute, value: "$HOME/.config/rofi/scripts/calendar", modifier: ["modkey"], key: "c"),
-        (command: Execute, value: "$HOME/.config/rofi/scripts/powermenu", modifier: ["modkey", "Shift"], key: "p"),
+        (command: Execute, value: "$HOME/.config/rofi/scripts/powermenu", modifier: ["modkey", "Control"], key: "p"),
+	(command: Execute, value: "$HOME/.config/rofi/scripts/wifimenu", modifier: ["modkey", "Control"], key: "v"),
 
 // ------ WindowControl ------
 
@@ -105,11 +109,15 @@ keybind: [
 
 // ------ Layout ------
 
-	(command: SetLayout, value: "Monocle", modifier: ["modkey"], key: "m"),
-	(command: SetLayout, value: "MainAndVertStack", modifier: ["modkey"], key: "v"),
+	(command: SetLayout, value: "Monocle", modifier: ["modkey", "Shift"], key: "f"),
+	(command: SetLayout, value: "MainAndVertStack", modifier: ["modkey", "Shift"], key: "m"),
+	(command: SetLayout, value: "EvenHorizontal", modifier: ["modkey", "Shift"], key: "h"),
+	(command: SetLayout, value: "EvenVertical", modifier: ["modkey", "Shift"], key: "v"),
+	(command: SetLayout, value: "Fibonacci", modifier: ["modkey", "Shift"], key: "l"),
+	(command: NextLayout, modifier: ["modkey", "Shift"], key: "Right"),
 
 // ------ LeftWM Control ------
-	(command: SoftReload, modifier: ["modkey", "Shift"], key: "r"),
+	(command: SoftReload, modifier: ["modkey", "Control"], key: "r"),
 	
 ],
 
